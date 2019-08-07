@@ -25,8 +25,9 @@ def click_event(event,x,y,flags,param):
                 
 
                 #mov=img[points[-6]:points[-5],points[-4]:points[-3]]
-                mov = img[116 : 102 , 323 : 219]
+                #mov = img[116 : 102 , 323 : 219]
                 
+                mov = img[100 : 100 , 200 : 200]
                 #addX=points[-4]-points[-6]
                 #addY=points[-3]-points[-5]
 
@@ -36,7 +37,8 @@ def click_event(event,x,y,flags,param):
 
                 #print('find diff : '+str(newX)+' '+str(newY))
                 #img[points[-2]:points[-1],newX:newY]=mov
-                img[117 : 217 , 324 : 334] = mov
+                #img[117 : 217 , 324 : 334] = mov
+                img[300 : 300 , 400 : 400] = mov
                 points.clear()
                 cv2.imshow('Image',img)
                 #npX=addX+points[-5]
